@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="sox">
+<input type="number" id="soxx">
+<button onclick="tichx()">Tính</button>
+<p id="kqtichx"></p>
+<script>
+    function tichx() {
+        let a = +document.getElementById("sox").value
+        let b = +document.getElementById("soxx").value
+        let c = 0;
+        for (let i = a; i <= b; i++) {
+            console.log(i+1)
+            if (i % 5 === 2) {
+                c = c + i;
+                //c += i;
+            }
+        }
+        document.getElementById("kqtichx").innerHTML = c;
+    }
+</script>
+</body>
+</html>

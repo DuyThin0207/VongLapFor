@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Bài 1:
+<input type="number" id="so1">
+<input type="number" id="so2">
+<button onclick="tich()">Tính</button>
+<p id="kqtich"></p>
+<script>
+    function tich(){
+        let a =  +document.getElementById("so1").value
+        let b =  +document.getElementById("so2").value
+        let c = 1
+        for ( let i=a ; i <= b ; i++){
+            c = c * i
+        } document.getElementById("kqtich").innerHTML = c }
+</script>
+</body>
+</html>
